@@ -71,7 +71,7 @@ describe "sum" do
   it "computes the sum of an array of many numbers" do
     expect(sum([1,3,5,7,9])).to eq(25)
   end
-end
+
 
 # Extra Credit Test-Driving Bonus:
 # once the above tests pass,
@@ -79,11 +79,19 @@ end
 
 describe "#multiply" do
 
-  it "multiplies two numbers"
 
-  it "multiplies several numbers"
-  
+
+  it "multiplies two numbers" do
+    expect(multiply([2,4])).to eq(8)
+  end
+
+
+  it "multiplies several numbers" do
+    expect(multiply([2,4,2])).to eq(16)
+  end
 end
+  
+
 
 describe "#power" do
   it "raises one number to the power of another number"
@@ -96,4 +104,5 @@ describe "#factorial" do
   it "computes the factorial of 2"
   it "computes the factorial of 5"
   it "computes the factorial of 10"
+end
 end
